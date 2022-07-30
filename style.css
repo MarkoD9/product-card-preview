@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  overflow-wrap: normal;
+}
+.popup-wrapper {
+  width: 600px;
+  height: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.left-side {
+  min-width: 50%;
+  width: 50%;
+  height: 100%;
+  background-image: url(images/image-product-desktop.jpg);
+  background-size: cover;
+}
+.right-side {
+  min-width: 50%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.left-side img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tagline {
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.product-information {
+}
+
+.price-green {
+  color: hsl(158, 36%, 37%);
+  margin-right: 20px;
+}
+
+.old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 13px;
+}
+.btn-container {
+  width: 100%;
+}
+
+.addtocart-btn {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-size: 14 px;
+
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cart-icon {
+  margin-right: 10px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  margin: 20px 0;
+  font-size: 32px;
+  color: hsl(212, 21%, 14%);
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  /** Größerer Viewport: Tablett **/
+  body {
+    padding: 0 20px;
+  }
+
+  .popup-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-side {
+    width: 100%;
+    height: 240px;
+    background-image: url(images/image-product-mobile.jpg);
+  }
+
+  .left-side img {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 23px;
+  }
+
+  h1 {
+    margin: 12px 0;
+  }
+}
